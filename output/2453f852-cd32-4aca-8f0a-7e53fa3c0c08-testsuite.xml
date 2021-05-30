@@ -1,0 +1,1784 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622398245274' stop='1622398358445'>
+    <name>In order to prove that the select 100 page works
+    As a test user
+    I need to verify the functionality does what it's supposed to do:</name>
+    <title>In order to prove that the select 100 page works
+    As a test user
+    I need to verify the functionality does what it's supposed to do:</title>
+    <test-cases>
+        <test-case start='1622398245275' status='passed' stop='1622398247979'>
+            <name>Given I am at the homepage
+            And I have not selected any items before
+            Then there are no items selected on the screen
+            </name>
+            <title>Given I am at the homepage
+            And I have not selected any items before
+            Then there are no items selected on the screen
+            </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1622398247724' status='passed' stop='1622398247979'>
+                    <name>amazingItems: numberOfSelectedItems </name>
+                    <title>amazingItems: numberOfSelectedItems </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398247724' status='passed' stop='1622398247976'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398247976' status='passed' stop='1622398247979'>
+                            <name>I grab number of visible elements "//div[@class='grid__item grid__item--selected']"</name>
+                            <title>I grab number of visible elements "//div[@class='grid__item grid__item--selected']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1622398248026' status='passed' stop='1622398250574'>
+            <name>Given I am at the homepage
+            And I have selected item 0
+            Then item 0 is selected
+            </name>
+            <title>Given I am at the homepage
+            And I have selected item 0
+            Then item 0 is selected
+            </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1622398250214' status='passed' stop='1622398250568'>
+                    <name>amazingItems: selectItem </name>
+                    <title>amazingItems: selectItem </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398250214' status='passed' stop='1622398250434'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398250434' status='passed' stop='1622398250562'>
+                            <name>I click "//*[text()[contains(., 'item-0' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-0' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398250562' status='passed' stop='1622398250568'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-0' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-0' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398250568' status='passed' stop='1622398250574'>
+                    <name>amazingItems: checkItemSelected </name>
+                    <title>amazingItems: checkItemSelected </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398250568' status='passed' stop='1622398250571'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398250571' status='passed' stop='1622398250574'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-0' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-0' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1622398250610' status='passed' stop='1622398255414'>
+            <name>Given I am at the homepage
+            And I have scrolled down to and selected item 100
+            Then item 100 is selected
+            </name>
+            <title>Given I am at the homepage
+            And I have scrolled down to and selected item 100
+            Then item 100 is selected
+            </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1622398252783' status='passed' stop='1622398254288'>
+                    <name>amazingItems: selectItem 100</name>
+                    <title>amazingItems: selectItem 100</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398252783' status='passed' stop='1622398253033'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398253033' status='passed' stop='1622398253153'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398253153' status='passed' stop='1622398254157'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398254157' status='passed' stop='1622398254280'>
+                            <name>I click "//*[text()[contains(., 'item-100' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-100' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398254281' status='passed' stop='1622398254288'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-100' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-100' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398254288' status='passed' stop='1622398255414'>
+                    <name>amazingItems: checkItemSelected 100</name>
+                    <title>amazingItems: checkItemSelected 100</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398254288' status='passed' stop='1622398254291'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398254291' status='passed' stop='1622398254401'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398254401' status='passed' stop='1622398255406'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398255406' status='passed' stop='1622398255414'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-100' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-100' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1622398255505' status='failed' stop='1622398267284'>
+            <name>Given I am at the homepage
+            And I have selected item 10
+            And I have refreshed the page
+            Then item 10 is selected
+            </name>
+            <title>Given I am at the homepage
+            And I have selected item 10
+            And I have refreshed the page
+            Then item 10 is selected
+            </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1622398258148' status='passed' stop='1622398259642'>
+                    <name>amazingItems: selectItem 10</name>
+                    <title>amazingItems: selectItem 10</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398258148' status='passed' stop='1622398258371'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398258371' status='passed' stop='1622398258499'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398258499' status='passed' stop='1622398259504'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398259504' status='passed' stop='1622398259635'>
+                            <name>I click "//*[text()[contains(., 'item-10' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-10' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398259635' status='passed' stop='1622398259642'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398259643' status='passed' stop='1622398260763'>
+                    <name>amazingItems: checkItemSelected 10</name>
+                    <title>amazingItems: checkItemSelected 10</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398259643' status='passed' stop='1622398259647'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398259647' status='passed' stop='1622398259755'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398259756' status='passed' stop='1622398260757'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398260757' status='passed' stop='1622398260763'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398260763' status='passed' stop='1622398260910'>
+                    <name>I refresh page </name>
+                    <title>I refresh page </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1622398260910' status='failed' stop='1622398267284'>
+                    <name>amazingItems: checkItemSelected 10</name>
+                    <title>amazingItems: checkItemSelected 10</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398260910' status='passed' stop='1622398261155'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398261155' status='passed' stop='1622398261277'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398261277' status='passed' stop='1622398262279'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398262279' status='failed' stop='1622398267284'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='c611b2bc-012c-4504-aaff-de8fdbd19ea5-attachment.png' type='image/png' size='114292'/>
+            </attachments>
+            <failure>
+                <message>element (//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]` failed: timeout 5000ms exceeded</message>
+                <stack-trace>Error: element (//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-10' )]` failed: timeout 5000ms exceeded
+                    at /Users/steven/Documents/GitHub/100Items/node_modules/codeceptjs/lib/helper/Puppeteer.js:1947:13</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1622398267657' status='failed' stop='1622398280619'>
+            <name>Given I am at the homepage
+            And I have scrolled down to and selected item 60
+            And I have refreshed the page
+            Then item 60 is selected
+            </name>
+            <title>Given I am at the homepage
+            And I have scrolled down to and selected item 60
+            And I have refreshed the page
+            Then item 60 is selected
+            </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1622398269892' status='passed' stop='1622398273028'>
+                    <name>amazingItems: selectItem 60</name>
+                    <title>amazingItems: selectItem 60</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398269892' status='passed' stop='1622398271782'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398271782' status='passed' stop='1622398271895'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398271896' status='passed' stop='1622398272900'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398272900' status='passed' stop='1622398273022'>
+                            <name>I click "//*[text()[contains(., 'item-60' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-60' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398273023' status='passed' stop='1622398273028'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398273028' status='passed' stop='1622398274150'>
+                    <name>amazingItems: checkItemSelected 60</name>
+                    <title>amazingItems: checkItemSelected 60</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398273028' status='passed' stop='1622398273032'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398273032' status='passed' stop='1622398273141'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398273141' status='passed' stop='1622398274146'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398274146' status='passed' stop='1622398274150'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398274150' status='passed' stop='1622398274298'>
+                    <name>I refresh page </name>
+                    <title>I refresh page </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1622398274298' status='failed' stop='1622398280619'>
+                    <name>amazingItems: checkItemSelected 60</name>
+                    <title>amazingItems: checkItemSelected 60</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398274298' status='passed' stop='1622398274502'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398274502' status='passed' stop='1622398274614'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398274614' status='passed' stop='1622398275616'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398275617' status='failed' stop='1622398280618'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='2b923857-4797-4d51-889c-e0ec7bc3e37f-attachment.png' type='image/png' size='114292'/>
+            </attachments>
+            <failure>
+                <message>element (//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]` failed: timeout 5000ms exceeded</message>
+                <stack-trace>Error: element (//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]` failed: timeout 5000ms exceeded
+                    at /Users/steven/Documents/GitHub/100Items/node_modules/codeceptjs/lib/helper/Puppeteer.js:1947:13</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1622398281119' status='failed' stop='1622398310218'>
+            <name>Given I am at the homepage
+            And I have scrolled down to and selected items 15 - 20
+            And I have refreshed the page
+            Then items 15 - 20 remain selected
+            </name>
+            <title>Given I am at the homepage
+            And I have scrolled down to and selected items 15 - 20
+            And I have refreshed the page
+            Then items 15 - 20 remain selected
+            </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1622398283438' status='passed' stop='1622398291055'>
+                    <name>amazingItems: selectItem 20</name>
+                    <title>amazingItems: selectItem 20</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398283438' status='passed' stop='1622398283638'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398283638' status='passed' stop='1622398283750'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398283750' status='passed' stop='1622398284753'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398284753' status='passed' stop='1622398284869'>
+                            <name>I click "//*[text()[contains(., 'item-15' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-15' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398284869' status='passed' stop='1622398284873'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-15' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-15' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398284874' status='passed' stop='1622398284877'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398284877' status='passed' stop='1622398284986'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398284986' status='passed' stop='1622398285987'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398285987' status='passed' stop='1622398286103'>
+                            <name>I click "//*[text()[contains(., 'item-16' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-16' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398286103' status='passed' stop='1622398286108'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-16' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-16' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398286108' status='passed' stop='1622398286111'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398286112' status='passed' stop='1622398286221'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398286222' status='passed' stop='1622398287225'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398287225' status='passed' stop='1622398287343'>
+                            <name>I click "//*[text()[contains(., 'item-17' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-17' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398287344' status='passed' stop='1622398287350'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-17' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-17' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398287350' status='passed' stop='1622398287353'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398287353' status='passed' stop='1622398287460'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398287460' status='passed' stop='1622398288461'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398288461' status='passed' stop='1622398288578'>
+                            <name>I click "//*[text()[contains(., 'item-18' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-18' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398288578' status='passed' stop='1622398288584'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-18' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-18' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398288584' status='passed' stop='1622398288587'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398288587' status='passed' stop='1622398288696'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398288696' status='passed' stop='1622398289699'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398289699' status='passed' stop='1622398289815'>
+                            <name>I click "//*[text()[contains(., 'item-19' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-19' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398289816' status='passed' stop='1622398289821'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-19' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-19' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398289821' status='passed' stop='1622398289825'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398289825' status='passed' stop='1622398289933'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398289933' status='passed' stop='1622398290937'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398290937' status='passed' stop='1622398291049'>
+                            <name>I click "//*[text()[contains(., 'item-20' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-20' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398291049' status='passed' stop='1622398291055'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398291055' status='passed' stop='1622398297776'>
+                    <name>amazingItems: checkItemSelected 20</name>
+                    <title>amazingItems: checkItemSelected 20</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398291055' status='passed' stop='1622398291058'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398291059' status='passed' stop='1622398291169'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398291170' status='passed' stop='1622398292171'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398292172' status='passed' stop='1622398292177'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-15' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-15' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398292177' status='passed' stop='1622398292180'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398292180' status='passed' stop='1622398292288'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398292288' status='passed' stop='1622398293290'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398293290' status='passed' stop='1622398293295'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-16' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-16' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398293296' status='passed' stop='1622398293299'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398293299' status='passed' stop='1622398293409'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398293409' status='passed' stop='1622398294414'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398294415' status='passed' stop='1622398294420'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-17' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-17' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398294420' status='passed' stop='1622398294423'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398294423' status='passed' stop='1622398294532'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398294532' status='passed' stop='1622398295533'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398295533' status='passed' stop='1622398295537'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-18' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-18' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398295537' status='passed' stop='1622398295539'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398295539' status='passed' stop='1622398295648'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398295648' status='passed' stop='1622398296653'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398296654' status='passed' stop='1622398296659'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-19' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-19' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398296659' status='passed' stop='1622398296663'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398296663' status='passed' stop='1622398296769'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398296769' status='passed' stop='1622398297770'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398297771' status='passed' stop='1622398297776'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398297776' status='passed' stop='1622398297921'>
+                    <name>I refresh page </name>
+                    <title>I refresh page </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1622398297921' status='failed' stop='1622398310218'>
+                    <name>amazingItems: checkItemSelected 20</name>
+                    <title>amazingItems: checkItemSelected 20</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398297921' status='passed' stop='1622398298488'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398298488' status='passed' stop='1622398298610'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398298611' status='passed' stop='1622398299615'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398299616' status='passed' stop='1622398299622'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-15' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-15' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398299622' status='passed' stop='1622398299625'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398299625' status='passed' stop='1622398299732'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398299732' status='passed' stop='1622398300733'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398300733' status='passed' stop='1622398300739'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-16' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-16' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398300739' status='passed' stop='1622398300742'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398300742' status='passed' stop='1622398300849'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398300849' status='passed' stop='1622398301852'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398301852' status='passed' stop='1622398301858'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-17' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-17' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398301858' status='passed' stop='1622398301861'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398301861' status='passed' stop='1622398301970'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398301970' status='passed' stop='1622398302971'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398302972' status='passed' stop='1622398302977'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-18' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-18' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398302977' status='passed' stop='1622398302981'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398302981' status='passed' stop='1622398303088'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398303088' status='passed' stop='1622398304094'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398304094' status='passed' stop='1622398304100'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-19' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-19' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398304100' status='passed' stop='1622398304103'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398304103' status='passed' stop='1622398304208'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398304209' status='passed' stop='1622398305212'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398305213' status='failed' stop='1622398310218'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='8d331bdc-ff66-45da-8075-737d508329a3-attachment.png' type='image/png' size='122490'/>
+            </attachments>
+            <failure>
+                <message>element (//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]` failed: timeout 5000ms exceeded</message>
+                <stack-trace>Error: element (//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-20' )]` failed: timeout 5000ms exceeded
+                    at /Users/steven/Documents/GitHub/100Items/node_modules/codeceptjs/lib/helper/Puppeteer.js:1947:13</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1622398310664' status='failed' stop='1622398340047'>
+            <name>Given I am at the homepage
+            And I have scrolled down to and selected items 60 - 65
+            And I have refreshed the page
+            Then items 60 - 65 remain selected
+            </name>
+            <title>Given I am at the homepage
+            And I have scrolled down to and selected items 60 - 65
+            And I have refreshed the page
+            Then items 60 - 65 remain selected
+            </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1622398312854' status='passed' stop='1622398320933'>
+                    <name>amazingItems: selectItem 65</name>
+                    <title>amazingItems: selectItem 65</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398312854' status='passed' stop='1622398313529'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398313529' status='passed' stop='1622398313643'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398313643' status='passed' stop='1622398314648'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398314648' status='passed' stop='1622398314765'>
+                            <name>I click "//*[text()[contains(., 'item-60' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-60' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398314765' status='passed' stop='1622398314769'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398314770' status='passed' stop='1622398314773'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398314773' status='passed' stop='1622398314881'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398314882' status='passed' stop='1622398315884'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398315884' status='passed' stop='1622398315997'>
+                            <name>I click "//*[text()[contains(., 'item-61' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-61' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398315997' status='passed' stop='1622398316003'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-61' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-61' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398316003' status='passed' stop='1622398316006'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398316006' status='passed' stop='1622398316116'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398316116' status='passed' stop='1622398317121'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398317121' status='passed' stop='1622398317239'>
+                            <name>I click "//*[text()[contains(., 'item-62' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-62' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398317240' status='passed' stop='1622398317245'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-62' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-62' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398317246' status='passed' stop='1622398317249'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398317249' status='passed' stop='1622398317353'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398317353' status='passed' stop='1622398318354'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398318355' status='passed' stop='1622398318464'>
+                            <name>I click "//*[text()[contains(., 'item-63' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-63' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398318465' status='passed' stop='1622398318471'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-63' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-63' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398318471' status='passed' stop='1622398318474'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398318474' status='passed' stop='1622398318580'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398318580' status='passed' stop='1622398319584'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398319584' status='passed' stop='1622398319698'>
+                            <name>I click "//*[text()[contains(., 'item-64' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-64' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398319699' status='passed' stop='1622398319704'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-64' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-64' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398319704' status='passed' stop='1622398319708'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398319708' status='passed' stop='1622398319814'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398319815' status='passed' stop='1622398320816'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398320816' status='passed' stop='1622398320927'>
+                            <name>I click "//*[text()[contains(., 'item-65' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-65' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398320927' status='passed' stop='1622398320933'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398320933' status='passed' stop='1622398327659'>
+                    <name>amazingItems: checkItemSelected 65</name>
+                    <title>amazingItems: checkItemSelected 65</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398320933' status='passed' stop='1622398320936'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398320936' status='passed' stop='1622398321043'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398321043' status='passed' stop='1622398322048'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398322048' status='passed' stop='1622398322054'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398322054' status='passed' stop='1622398322057'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398322057' status='passed' stop='1622398322167'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398322168' status='passed' stop='1622398323169'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398323169' status='passed' stop='1622398323175'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-61' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-61' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398323175' status='passed' stop='1622398323178'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398323179' status='passed' stop='1622398323288'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398323288' status='passed' stop='1622398324293'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398324294' status='passed' stop='1622398324299'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-62' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-62' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398324299' status='passed' stop='1622398324302'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398324302' status='passed' stop='1622398324407'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398324407' status='passed' stop='1622398325412'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398325412' status='passed' stop='1622398325416'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-63' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-63' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398325416' status='passed' stop='1622398325419'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398325419' status='passed' stop='1622398325528'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398325528' status='passed' stop='1622398326531'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398326532' status='passed' stop='1622398326537'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-64' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-64' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398326537' status='passed' stop='1622398326540'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398326540' status='passed' stop='1622398326648'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398326649' status='passed' stop='1622398327654'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398327654' status='passed' stop='1622398327659'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398327659' status='passed' stop='1622398327812'>
+                    <name>I refresh page </name>
+                    <title>I refresh page </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1622398327812' status='failed' stop='1622398340047'>
+                    <name>amazingItems: checkItemSelected 65</name>
+                    <title>amazingItems: checkItemSelected 65</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398327812' status='passed' stop='1622398328318'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398328318' status='passed' stop='1622398328446'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398328447' status='passed' stop='1622398329447'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398329448' status='passed' stop='1622398329453'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-60' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398329453' status='passed' stop='1622398329457'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398329457' status='passed' stop='1622398329564'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398329564' status='passed' stop='1622398330565'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398330565' status='passed' stop='1622398330571'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-61' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-61' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398330571' status='passed' stop='1622398330574'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398330574' status='passed' stop='1622398330682'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398330682' status='passed' stop='1622398331683'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398331683' status='passed' stop='1622398331688'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-62' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-62' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398331688' status='passed' stop='1622398331692'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398331692' status='passed' stop='1622398331796'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398331796' status='passed' stop='1622398332801'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398332801' status='passed' stop='1622398332806'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-63' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-63' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398332807' status='passed' stop='1622398332810'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398332810' status='passed' stop='1622398332918'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398332918' status='passed' stop='1622398333925'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398333925' status='passed' stop='1622398333930'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-64' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-64' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398333930' status='passed' stop='1622398333933'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398333933' status='passed' stop='1622398334041'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398334041' status='passed' stop='1622398335045'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398335045' status='failed' stop='1622398340047'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='d0f820e8-1177-44bb-936c-524230950168-attachment.png' type='image/png' size='122490'/>
+            </attachments>
+            <failure>
+                <message>element (//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]` failed: timeout 5000ms exceeded</message>
+                <stack-trace>Error: element (//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-65' )]` failed: timeout 5000ms exceeded
+                    at /Users/steven/Documents/GitHub/100Items/node_modules/codeceptjs/lib/helper/Puppeteer.js:1947:13</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1622398340498' status='failed' stop='1622398357995'>
+            <name>Given I am at the homepage
+            And I have scrolled down to and selected item 987
+            And I have refreshed the page
+            Then item 987 remains selected
+            </name>
+            <title>Given I am at the homepage
+            And I have scrolled down to and selected item 987
+            And I have refreshed the page
+            Then item 987 remains selected
+            </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1622398342680' status='passed' stop='1622398346976'>
+                    <name>amazingItems: selectItem 987</name>
+                    <title>amazingItems: selectItem 987</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398342680' status='passed' stop='1622398342896'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398342896' status='passed' stop='1622398343021'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398343021' status='passed' stop='1622398343292'>
+                            <name>I scroll to "//*[text()[contains(., 'item-199' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-199' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398343292' status='passed' stop='1622398343558'>
+                            <name>I scroll to "//*[text()[contains(., 'item-299' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-299' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398343558' status='passed' stop='1622398343834'>
+                            <name>I scroll to "//*[text()[contains(., 'item-399' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-399' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398343834' status='passed' stop='1622398344119'>
+                            <name>I scroll to "//*[text()[contains(., 'item-499' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-499' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398344119' status='passed' stop='1622398344400'>
+                            <name>I scroll to "//*[text()[contains(., 'item-599' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-599' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398344400' status='passed' stop='1622398344986'>
+                            <name>I scroll to "//*[text()[contains(., 'item-699' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-699' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398344987' status='passed' stop='1622398345270'>
+                            <name>I scroll to "//*[text()[contains(., 'item-799' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-799' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398345271' status='passed' stop='1622398345552'>
+                            <name>I scroll to "//*[text()[contains(., 'item-899' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-899' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398345553' status='passed' stop='1622398345839'>
+                            <name>I scroll to "//*[text()[contains(., 'item-999' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-999' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398345839' status='passed' stop='1622398346844'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398346845' status='passed' stop='1622398346969'>
+                            <name>I click "//*[text()[contains(., 'item-987' )]]"</name>
+                            <title>I click "//*[text()[contains(., 'item-987' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398346969' status='passed' stop='1622398346976'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398346976' status='passed' stop='1622398349112'>
+                    <name>amazingItems: checkItemSelected 987</name>
+                    <title>amazingItems: checkItemSelected 987</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398346976' status='passed' stop='1622398346980'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398346980' status='passed' stop='1622398347086'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347086' status='passed' stop='1622398347197'>
+                            <name>I scroll to "//*[text()[contains(., 'item-199' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-199' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347197' status='passed' stop='1622398347316'>
+                            <name>I scroll to "//*[text()[contains(., 'item-299' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-299' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347316' status='passed' stop='1622398347429'>
+                            <name>I scroll to "//*[text()[contains(., 'item-399' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-399' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347429' status='passed' stop='1622398347539'>
+                            <name>I scroll to "//*[text()[contains(., 'item-499' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-499' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347539' status='passed' stop='1622398347651'>
+                            <name>I scroll to "//*[text()[contains(., 'item-599' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-599' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347652' status='passed' stop='1622398347762'>
+                            <name>I scroll to "//*[text()[contains(., 'item-699' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-699' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347763' status='passed' stop='1622398347876'>
+                            <name>I scroll to "//*[text()[contains(., 'item-799' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-799' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347876' status='passed' stop='1622398347989'>
+                            <name>I scroll to "//*[text()[contains(., 'item-899' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-899' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398347989' status='passed' stop='1622398348101'>
+                            <name>I scroll to "//*[text()[contains(., 'item-999' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-999' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398348101' status='passed' stop='1622398349105'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398349106' status='passed' stop='1622398349112'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1622398349112' status='passed' stop='1622398349249'>
+                    <name>I refresh page </name>
+                    <title>I refresh page </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1622398349249' status='failed' stop='1622398357995'>
+                    <name>amazingItems: checkItemSelected 987</name>
+                    <title>amazingItems: checkItemSelected 987</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622398349249' status='passed' stop='1622398349443'>
+                            <name>I wait for element "//div[@class='grid']", 5</name>
+                            <title>I wait for element "//div[@class='grid']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398349443' status='passed' stop='1622398349549'>
+                            <name>I scroll to "//*[text()[contains(., 'item-99' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-99' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398349550' status='passed' stop='1622398349823'>
+                            <name>I scroll to "//*[text()[contains(., 'item-199' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-199' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398349823' status='passed' stop='1622398350094'>
+                            <name>I scroll to "//*[text()[contains(., 'item-299' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-299' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398350095' status='passed' stop='1622398350364'>
+                            <name>I scroll to "//*[text()[contains(., 'item-399' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-399' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398350364' status='passed' stop='1622398350635'>
+                            <name>I scroll to "//*[text()[contains(., 'item-499' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-499' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398350635' status='passed' stop='1622398350900'>
+                            <name>I scroll to "//*[text()[contains(., 'item-599' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-599' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398350900' status='passed' stop='1622398351171'>
+                            <name>I scroll to "//*[text()[contains(., 'item-699' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-699' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398351171' status='passed' stop='1622398351441'>
+                            <name>I scroll to "//*[text()[contains(., 'item-799' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-799' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398351442' status='passed' stop='1622398351722'>
+                            <name>I scroll to "//*[text()[contains(., 'item-899' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-899' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398351722' status='passed' stop='1622398351989'>
+                            <name>I scroll to "//*[text()[contains(., 'item-999' )]]"</name>
+                            <title>I scroll to "//*[text()[contains(., 'item-999' )]]"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398351989' status='passed' stop='1622398352990'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1622398352990' status='failed' stop='1622398357995'>
+                            <name>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]", 5</name>
+                            <title>I wait for element "//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='d2975de9-e3f8-4989-9077-7dc0678d6256-attachment.png' type='image/png' size='128056'/>
+            </attachments>
+            <failure>
+                <message>element (//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]` failed: timeout 5000ms exceeded</message>
+                <stack-trace>Error: element (//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]) still not present on page after 5 sec
+                waiting for XPath `//div[@class='grid__item grid__item--selected'][contains(., 'item-987' )]` failed: timeout 5000ms exceeded
+                    at /Users/steven/Documents/GitHub/100Items/node_modules/codeceptjs/lib/helper/Puppeteer.js:1947:13</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -18,8 +18,8 @@ Scenario( "Given I am at the homepage\n" +
 	} );
 
 Scenario( "Given I am at the homepage\n" +
-	"And I have selected an item\n" +
-	"Then one item is selected\n",
+	"And I have selected item 0\n" +
+	"Then item 0 is selected\n",
 	async( { I, amazingItems } ) => {
 		amazingItems.selectItem( 0 );
 		amazingItems.checkItemSelected( 0 );
@@ -27,7 +27,7 @@ Scenario( "Given I am at the homepage\n" +
 
 Scenario( "Given I am at the homepage\n" +
 	"And I have scrolled down to and selected item 100\n" +
-	"Then one item is selected\n",
+	"Then item 100 is selected\n",
 	async( { I, amazingItems } ) => {
 		amazingItems.selectItem( 100 );
 		amazingItems.checkItemSelected( 100 );
@@ -36,7 +36,7 @@ Scenario( "Given I am at the homepage\n" +
 Scenario( "Given I am at the homepage\n" +
 	"And I have selected item 10\n" +
 	"And I have refreshed the page\n" +
-	"Then one item remains selected\n",
+	"Then item 10 is selected\n",
 	async( { I, amazingItems } ) => {
 		amazingItems.selectItem( 10 );
 		amazingItems.checkItemSelected( 10 );
@@ -47,7 +47,7 @@ Scenario( "Given I am at the homepage\n" +
 Scenario( "Given I am at the homepage\n" +
 	"And I have scrolled down to and selected item 60\n" +
 	"And I have refreshed the page\n" +
-	"Then one item is remains selected\n",
+	"Then item 60 is selected\n",
 	async( { I, amazingItems } ) => {
 		amazingItems.selectItem( 60 );
 		amazingItems.checkItemSelected( 60 );
@@ -58,7 +58,7 @@ Scenario( "Given I am at the homepage\n" +
 Scenario( "Given I am at the homepage\n" +
 	"And I have scrolled down to and selected items 15 - 20\n" +
 	"And I have refreshed the page\n" +
-	"Then six items remain selected\n",
+	"Then items 15 - 20 remain selected\n",
 	async( { I, amazingItems } ) => {
 		amazingItems.selectItem( 15 );
 		amazingItems.selectItem( 16 );
@@ -84,7 +84,7 @@ Scenario( "Given I am at the homepage\n" +
 Scenario( "Given I am at the homepage\n" +
 	"And I have scrolled down to and selected items 60 - 65\n" +
 	"And I have refreshed the page\n" +
-	"Then six items remain selected\n",
+	"Then items 60 - 65 remain selected\n",
 	async( { I, amazingItems } ) => {
 		amazingItems.selectItem( 60 );
 		amazingItems.selectItem( 61 );
@@ -110,7 +110,7 @@ Scenario( "Given I am at the homepage\n" +
 Scenario( "Given I am at the homepage\n" +
 	"And I have scrolled down to and selected item 987\n" +
 	"And I have refreshed the page\n" +
-	"Then one item is remains selected\n",
+	"Then item 987 remains selected\n",
 	async( { I, amazingItems } ) => {
 		amazingItems.selectItem( 987 );
 		amazingItems.checkItemSelected( 987 );

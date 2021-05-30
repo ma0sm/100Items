@@ -10,7 +10,7 @@ exports.config = {
 	helpers: {
 		Puppeteer: {
 			url: "https://immense-savannah-13991.herokuapp.com",
-			show: true,
+			show: false,
 			windowSize: "1600x1200",
 			timeouts: {
 				script: 60000,
@@ -48,6 +48,9 @@ exports.config = {
 			enabled: true,
 		},
 		screenshotOnFail: {
+			enabled: true,
+		},
+		allure: {
 			enabled: true,
 		},
 	},
