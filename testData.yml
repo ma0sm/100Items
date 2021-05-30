@@ -1,16 +1,2 @@
 # setup data
-github_url: 'http://www.github.com'
-#login data
-loginEmail: stevenmorgan+depttestaccount@gmail.com
-password: ThisIsThePassword!!!
-username: DeptTestAccount
-defaultTimeout: 10
-repository: DeptTestRepository
-repositoryDescription: This is the test description for the repository
-repositoryVisibility: private
-gitIgnoreTemplate: JENKINS_HOME
-gitLicenseType: The Unlicense
-readme: README.md
-new_readme_text: This is the new text in the README.md file
-readme_summary: Changed the content of the README.md file
-readme_description: Updated the README.md file to have a less glamorous content
+homepage: 'https://immense-savannah-13991.herokuapp.com'

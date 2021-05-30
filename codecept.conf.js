@@ -9,8 +9,8 @@ exports.config = {
 	output: "./output",
 	helpers: {
 		Puppeteer: {
-			url: "http://www.github.com",
-			show: false,
+			url: "https://immense-savannah-13991.herokuapp.com",
+			show: true,
 			windowSize: "1600x1200",
 			timeouts: {
 				script: 60000,
@@ -29,16 +29,10 @@ exports.config = {
 		ElementHelper: {
 			require: "./element_helper.js",
 		},
-		REST: {
-			endpoint: "http://www.github.com/wp-json/wp/v2/",
-			onRequest: ( request ) => {
-				request.headers.auth = "123";
-			},
-		},
 	},
 	include: {
 		I: "./steps_file.js",
-		github: "./pages/github.js",
+		amazingItems: "./pages/amazingItems.js",
 		config: "./utils/config.js",
 	},
 	bootstrap: null,
