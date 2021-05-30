@@ -117,7 +117,3 @@ Scenario( "Given I am at the homepage\n" +
 		I.refreshPage();
 		amazingItems.checkItemSelected( 987 );
 	} );
-
-After( async( { I, amazingItems } ) => {
-	console.log( "After" );
-} );
