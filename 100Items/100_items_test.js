@@ -18,6 +18,15 @@ Scenario( "Given I am at the homepage\n" +
 	} );
 
 Scenario( "Given I am at the homepage\n" +
+	"And I have not selected any items before\n" +
+	"Then there are 100 items unselected on the screen\n",
+	async( { I, amazingItems } ) => {
+		if( await amazingItems.numberOfUnselectedItems() !== 100 ) {
+			throw new Error('Unexpected number of items selected');
+		}
+	} );
+
+Scenario( "Given I am at the homepage\n" +
 	"And I have selected item 0\n" +
 	"Then item 0 is selected\n",
 	async( { I, amazingItems } ) => {

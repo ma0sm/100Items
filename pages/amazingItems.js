@@ -73,4 +73,13 @@ module.exports = {
 			console.log( "Error while counting number of selected items:", e );
 		}
 	},
+
+	async numberOfUnselectedItems() {
+		try{
+			I.waitForElement( "//div[@class='grid']", 5 );
+			return await I.grabNumberOfVisibleElements( "//div[@class='grid__item ']" );
+		} catch ( e ) {
+			console.log( "Error while counting number of selected items:", e );
+		}
+	},
 };
