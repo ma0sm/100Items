@@ -16,7 +16,6 @@ module.exports = {
 		}
 	},
 
-
 	selectItem( number ) {
 		try{
 			if( number === 0 ) {
@@ -42,6 +41,31 @@ module.exports = {
 		}
 	},
 
+	unselectItem( number ) {
+		try{
+			if( number === 0 ) {
+				I.waitForElement( "//div[@class='grid']", 5 );
+				I.click( "//div[@class='grid__item grid__item--selected'][contains(., 'item-0' )]" );
+				I.waitForElement( "//*[text()[contains(., 'item-0' )]]", 5 )
+			} else {
+				var pageCounter, scrollCounter;
+				I.waitForElement("//div[@class='grid']", 5);
+				pageCounter = 99;
+				scrollCounter = number / 100;
+				while (scrollCounter > 0) {
+					I.scrollTo("//*[text()[contains(., 'item-" + pageCounter + "' )]]");
+					pageCounter = pageCounter + 100;
+					scrollCounter--;
+				}
+				I.wait( 1 );
+				I.click( "//div[@class='grid__item grid__item--selected'][contains(., 'item-" + number + "' )]" );
+				I.waitForElement("//*[text()[contains(., 'item-" + number + "' )]]", 5)
+			}
+		} catch ( e ) {
+			console.log( "Error while selecting item:", e );
+		}
+	},
+
 	checkItemSelected ( selectedItem ) {
 		try{
 			if( selectedItem === 0 ) {
@@ -59,6 +83,29 @@ module.exports = {
 				}
 				I.wait( 1 );
 				I.waitForElement( "//div[@class='grid__item grid__item--selected'][contains(., 'item-" + selectedItem + "' )]", 5 );
+			}
+		} catch ( e ) {
+			console.log( "Error while selecting item:", e );
+		}
+	},
+
+	checkItemUnselected( unselectedItem ) {
+		try{
+			if( unselectedItem === 0 ) {
+				I.waitForElement( "//div[@class='grid']", 5 );
+				I.waitForElement( "//div[@class='grid__item grid__item--selected'][contains(., 'item-0' )]", 5 )
+			} else {
+				var pageCounter, scrollCounter;
+				I.waitForElement("//div[@class='grid']", 5);
+				pageCounter = 99;
+				scrollCounter = unselectedItem / 100;
+				while (scrollCounter > 0) {
+					I.scrollTo("//*[text()[contains(., 'item-" + pageCounter + "' )]]");
+					pageCounter = pageCounter + 100;
+					scrollCounter--;
+				}
+				I.wait( 1 );
+				I.waitForElement( ("//*[text()[contains(., 'item-" + unselectedItem + "' )]]"), 5 );
 			}
 		} catch ( e ) {
 			console.log( "Error while selecting item:", e );

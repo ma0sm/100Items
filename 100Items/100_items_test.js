@@ -43,6 +43,22 @@ Scenario( "Given I am at the homepage\n" +
 	} );
 
 Scenario( "Given I am at the homepage\n" +
+	"And I have selected item 12\n" +
+	"And I have checked that it is selected\n" +
+	"And I have selected item 12 again\n" +
+	"And I have checked that it is unselected\n" +
+	"And I have refreshed the page\n" +
+	"Then the item remains unselected\n",
+	async( { I, amazingItems } ) => {
+		amazingItems.selectItem( 12 );
+		amazingItems.checkItemSelected( 12 );
+		amazingItems.unselectItem( 12 );
+		amazingItems.checkItemUnselected( 12 );
+		I.refreshPage();
+		amazingItems.checkItemUnselected( 12 );
+	} );
+
+Scenario( "Given I am at the homepage\n" +
 	"And I have selected item 10\n" +
 	"And I have refreshed the page\n" +
 	"Then item 10 is selected\n",
@@ -65,55 +81,29 @@ Scenario( "Given I am at the homepage\n" +
 	} );
 
 Scenario( "Given I am at the homepage\n" +
-	"And I have scrolled down to and selected items 15 - 20\n" +
-	"And I have refreshed the page\n" +
-	"Then items 15 - 20 remain selected\n",
-	async( { I, amazingItems } ) => {
-		amazingItems.selectItem( 15 );
-		amazingItems.selectItem( 16 );
-		amazingItems.selectItem( 17 );
-		amazingItems.selectItem( 18 );
-		amazingItems.selectItem( 19 );
-		amazingItems.selectItem( 20 );
-		amazingItems.checkItemSelected( 15 );
-		amazingItems.checkItemSelected( 16 );
-		amazingItems.checkItemSelected( 17 );
-		amazingItems.checkItemSelected( 18 );
-		amazingItems.checkItemSelected( 19 );
-		amazingItems.checkItemSelected( 20 );
-		I.refreshPage();
-		amazingItems.checkItemSelected( 15 );
-		amazingItems.checkItemSelected( 16 );
-		amazingItems.checkItemSelected( 17 );
-		amazingItems.checkItemSelected( 18 );
-		amazingItems.checkItemSelected( 19 );
-		amazingItems.checkItemSelected( 20 );
-	} );
-
-Scenario( "Given I am at the homepage\n" +
 	"And I have scrolled down to and selected items 60 - 65\n" +
 	"And I have refreshed the page\n" +
 	"Then items 60 - 65 remain selected\n",
 	async( { I, amazingItems } ) => {
-		amazingItems.selectItem( 60 );
+		amazingItems.selectItem( 14 );
 		amazingItems.selectItem( 61 );
 		amazingItems.selectItem( 62 );
 		amazingItems.selectItem( 63 );
 		amazingItems.selectItem( 64 );
-		amazingItems.selectItem( 65 );
-		amazingItems.checkItemSelected( 60 );
+		amazingItems.selectItem( 165 );
+		amazingItems.checkItemSelected( 14 );
 		amazingItems.checkItemSelected( 61 );
 		amazingItems.checkItemSelected( 62 );
 		amazingItems.checkItemSelected( 63 );
 		amazingItems.checkItemSelected( 64 );
-		amazingItems.checkItemSelected( 65 );
+		amazingItems.checkItemSelected( 165 );
 		I.refreshPage();
-		amazingItems.checkItemSelected( 60 );
+		amazingItems.checkItemSelected( 14 );
 		amazingItems.checkItemSelected( 61 );
 		amazingItems.checkItemSelected( 62 );
 		amazingItems.checkItemSelected( 63 );
 		amazingItems.checkItemSelected( 64 );
-		amazingItems.checkItemSelected( 65 );
+		amazingItems.checkItemSelected( 165 );
 	} );
 
 Scenario( "Given I am at the homepage\n" +
