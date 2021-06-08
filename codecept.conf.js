@@ -1,9 +1,3 @@
-const { setHeadlessWhen } = require( "@codeceptjs/configure" );
-
-// Turn on headless mode when running with HEADLESS=true environment variable
-// Export HEADLESS=true && npx codeceptjs run
-setHeadlessWhen( process.env.HEADLESS );
-
 exports.config = {
 	tests: "./*_test.js",
 	output: "./output",
@@ -23,21 +17,14 @@ exports.config = {
 				],
 			},
 		},
-		Response: {
-			require: "./response_helper.js",
-		},
-		ElementHelper: {
-			require: "./element_helper.js",
-		},
 	},
 	include: {
 		I: "./steps_file.js",
 		amazingItems: "./pages/amazingItems.js",
-		config: "./utils/config.js",
 	},
 	bootstrap: null,
 	mocha: {},
-	name: "plugins-automated-testing",
+	name: "100Items-Automated-Testing",
 	plugins: {
 		pauseOnFail: {},
 		retryFailedStep: {

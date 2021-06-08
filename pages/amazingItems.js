@@ -1,5 +1,3 @@
-const { get } = require( "../utils/config" );
-
 let I;
 
 module.exports = {

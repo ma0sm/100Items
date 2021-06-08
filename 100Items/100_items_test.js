@@ -1,5 +1,3 @@
-const { get } = require( "../utils/config" );
-
 Feature( "In order to prove that the select 100 page works\n" +
 	"As a test user\n" +
     "I need to verify the functionality does what it's supposed to do" );
